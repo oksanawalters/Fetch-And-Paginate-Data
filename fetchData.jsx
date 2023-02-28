@@ -93,7 +93,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 10;
   const [{ data, isLoading, isError }, doFetch] = useDataApi(
-    "https://jsonplaceholder.typicode.com/posts",
+    "https://hn.algolia.com/api/v1/search?query=MIT",
     {
       hits: [],
     }
